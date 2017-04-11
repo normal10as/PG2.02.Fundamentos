@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{C202DDFA-2CEE-450D-B7E3-5F4AFDF7FDA2}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>Fundamentos.Constantes</StartupObject>
+    <StartupObject>Fundamentos.sientonces</StartupObject>
     <RootNamespace>Fundamentos</RootNamespace>
     <AssemblyName>Fundamentos</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -84,7 +84,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constantes.vb" />
+    <Compile Include="enumeraciones.vb" />
+    <Compile Include="fechas.vb" />
+    <Compile Include="Matematica.vb" />
     <Compile Include="Operaciones.vb" />
+    <Compile Include="sientonces.vb" />
     <Compile Include="Variables.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
