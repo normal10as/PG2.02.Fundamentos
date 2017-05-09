@@ -1,5 +1,6 @@
 ﻿Module metodos
     Sub main()
+        ' PROBANDO METODOS
         holaMundo()
         escribir("Quiero escribir esto")
         imprimirMaximo(10, 16)
