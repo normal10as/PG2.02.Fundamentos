@@ -1,4 +1,5 @@
 ﻿Module arraylista
+
     Sub main()
         ' crea la coleccion
         Dim frutas As ArrayList

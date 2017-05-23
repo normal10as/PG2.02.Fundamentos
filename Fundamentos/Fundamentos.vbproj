@@ -83,6 +83,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="arraylista.vb" />
     <Compile Include="caso.vb" />
     <Compile Include="coleccion.vb" />
     <Compile Include="Constantes.vb" />
