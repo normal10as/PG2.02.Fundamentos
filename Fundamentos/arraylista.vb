@@ -12,22 +12,21 @@
         frutas.Add("Tomate")
         Console.WriteLine("CAntidad: " & frutas.Count)
         ' iterar
+        MostrarColeccion(frutas)
+
+        Console.WriteLine("eliminar e insertar")
         frutas.RemoveAt(3)
         frutas.Remove("Peras")
         frutas.Insert(0, "Mandarina")
         frutas.Insert(2, "Naranja")
 
-        For Each fruta In frutas
-            Console.WriteLine(fruta)
-        Next
+        MostrarColeccion(frutas)
         ' ordena por valores
         frutas.Sort()
         ' invierte el orden
         frutas.Reverse()
-
-        For Each fruta In frutas
-            Console.WriteLine(fruta)
-        Next
+        Console.WriteLine("Ordenar")
+        MostrarColeccion(frutas)
         ' obtiene el segundo elemento
         Console.WriteLine("segundo: " & frutas.Item(1))
         ' modifica el segundo elemento
@@ -39,17 +38,18 @@
         Console.WriteLine(frutas.Contains("Morango"))
         Console.WriteLine(frutas.IndexOf("Sandia"))
         Console.WriteLine(frutas.IndexOf("Morango"))
-
-        For Each fruta In frutas
-            Console.WriteLine(fruta)
-        Next
+        MostrarColeccion(frutas)
 
         frutas.Clear()
         Console.WriteLine("borrado todo")
         Console.WriteLine("Cantidad elementos: " & frutas.Count)
+        MostrarColeccion(frutas)
+    End Sub
+
+    Private Sub MostrarColeccion(frutas As ArrayList)
+        Console.WriteLine("Mostrar colección")
         For Each fruta In frutas
             Console.WriteLine(fruta)
         Next
     End Sub
-
 End Module
