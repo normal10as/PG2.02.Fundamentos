@@ -16,6 +16,7 @@
         frutas.Remove("Peras")
         frutas.Insert(0, "Mandarina")
         frutas.Insert(2, "Naranja")
+
         For Each fruta In frutas
             Console.WriteLine(fruta)
         Next
@@ -27,6 +28,19 @@
         Next
 
         Console.WriteLine("segundo: " & frutas.Item(1))
+        frutas(1) = "Sandia"
+        frutas.Item(1) = "Morango"
+        Console.WriteLine("segundo: " & frutas.Item(1))
+        ' buscar un valor
+        Console.WriteLine(frutas.Contains("Sandia"))
+        Console.WriteLine(frutas.Contains("Morango"))
+        Console.WriteLine(frutas.IndexOf("Sandia"))
+        Console.WriteLine(frutas.IndexOf("Morango"))
+
+        For Each fruta In frutas
+            Console.WriteLine(fruta)
+        Next
+
         frutas.Clear()
         Console.WriteLine("borrado todo")
         For Each fruta In frutas

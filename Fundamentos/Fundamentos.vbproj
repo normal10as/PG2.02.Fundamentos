@@ -92,9 +92,9 @@
     <Compile Include="hacer.vb" />
     <Compile Include="Matematica.vb" />
     <Compile Include="metodos.vb" />
-    <Compile Include="My Project\arraylista.vb" />
     <Compile Include="Operaciones.vb" />
     <Compile Include="sientonces.vb" />
+    <Compile Include="tablahash.vb" />
     <Compile Include="Variables.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
