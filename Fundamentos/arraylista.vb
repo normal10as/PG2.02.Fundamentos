@@ -20,14 +20,17 @@
         For Each fruta In frutas
             Console.WriteLine(fruta)
         Next
+        ' ordena por valores
         frutas.Sort()
+        ' invierte el orden
         frutas.Reverse()
 
         For Each fruta In frutas
             Console.WriteLine(fruta)
         Next
-
+        ' obtiene el segundo elemento
         Console.WriteLine("segundo: " & frutas.Item(1))
+        ' modifica el segundo elemento
         frutas(1) = "Sandia"
         frutas.Item(1) = "Morango"
         Console.WriteLine("segundo: " & frutas.Item(1))
@@ -43,6 +46,7 @@
 
         frutas.Clear()
         Console.WriteLine("borrado todo")
+        Console.WriteLine("Cantidad elementos: " & frutas.Count)
         For Each fruta In frutas
             Console.WriteLine(fruta)
         Next
