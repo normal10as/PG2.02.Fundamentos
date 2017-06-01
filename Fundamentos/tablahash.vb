@@ -8,9 +8,16 @@
         tablita.Add("A", "Azul")
         ' itera sobre la colección
         ' cada elemento es cread como un dictionaryentry
+        mostrarElementos(tablita)
+        Console.WriteLine(tablita.ContainsKey("R"))
+        Console.WriteLine(tablita.ContainsKey("W"))
+        tablita.Remove("V")
+        mostrarElementos(tablita)
+    End Sub
+
+    Private Sub mostrarElementos(tablita As Hashtable)
         For Each elemento As DictionaryEntry In tablita
             Console.WriteLine(elemento.Key & " " & elemento.Value)
         Next
-        'tablita.Contains
     End Sub
 End Module
