@@ -8,13 +8,13 @@
 
         mostrarTodos(pila)
         ' quita uno
-        pila.Pop()
+        Console.WriteLine("Extraigo:" & pila.Pop())
         ' agrega otro
         pila.Push(4)
+        Console.WriteLine("proximo:" & pila.Peek())
         mostrarTodos(pila)
         ' informa cantidad (si es igual a cero la pila esta vacia)
         Console.WriteLine("Cantidad: " & pila.Count)
-
     End Sub
 
     Private Sub mostrarTodos(pila As Stack)
